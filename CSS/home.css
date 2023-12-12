@@ -527,3 +527,83 @@ button:hover {
   border: none;
   cursor: pointer;
 }
+
+
+.product {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  margin-left: 30%;
+}
+
+.product img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product h2 {
+  font-size: 18px;
+}
+
+.checkout {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.checkout p {
+margin-left: 30%;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+button {
+  width: 300px;
+  color: #fff;
+  padding: 15px 20px;
+  border: noту;
+  cursor: pointer;
+  position: relative;
+}
+
+
+/* Cart page breadcrumb*/
+
+nav.breadcrumbs {
+  padding: 0px;
+  margin-top: -70px;
+  position: absolute;
+  
+  
+}
+
+nav.breadcrumbs ul {
+  list-style-type: none;
+  
+}
+
+nav.breadcrumbs li {
+  display: inline;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+nav.breadcrumbs a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+nav.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+nav.breadcrumbs img{
+  width: 20px;
+  height: 20px;
+
+}
