@@ -1,0 +1,49 @@
+.infoproduct_styling{
+    text-align: center;
+}
+
+.info_product{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.flex1{
+    flex: 1;
+    text-align: center;
+}
+
+.flex2{
+    flex: 1;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background-color:rgb(51, 51, 51);
+    margin: 25px auto;
+    border-radius: 5px;
+  }
+
+.flex2 a{
+    text-decoration: underline;
+}
+
+.line2{
+    width: 75%;
+    height: 4px;
+    background-color:rgb(51, 51, 51);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.title{
+    column-span: all;
+    display: block;
+}
+
+.content{
+
+    columns:100px 2;
+    column-gap: 30px;
+    padding: 20px;
+}

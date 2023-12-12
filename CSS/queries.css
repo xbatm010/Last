@@ -1,0 +1,44 @@
+/* .........Big tablet from 1024 to 1200px */
+/* ------------------------------------------------------------------ */
+/* ..........small to big tablet from768 to 1023px */
+/* Small phone 400 to small tablet 768 */
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+
+    nav ul {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      position: absolute; 
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      z-index: 1;
+    }
+
+    nav ul.active {
+      display: flex;
+    }
+
+    nav ul li {
+      margin: 15px 0;
+    }
+    
+    .sidebar{
+      display: none;
+    }
+  }
+
+
+  
+
+
+
+
+
+
+/* small phone from 0 to 420px */

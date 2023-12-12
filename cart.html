@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar shop</title>
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/64fe8cf115.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:ital,wght@1,300;1,400;1,600;1,700&family=Playpen+Sans:wght@300;400;700&family=Public+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/queries.css">
+</head>
+
+
+<body>
+    <header id="home">
+        <div class="logo"><a href="#home"></a>
+            Guitar Shop
+        </div>
+        <!-- Hamburger menu icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <!-- header content -->
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Search...">
+            <a href="info_product.html"><button class="search-button">Search</button></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Guitar</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="cart.html">Cart</a></li>
+
+        </nav>
+    </header>
+
+
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('nav ul');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+    <main>
+        <div class="small-container cart-page">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="img/fender-laurel-acoustic-guitar-capo.jpg">
+                        </div>
+
+                        <div>
+                            <p>Kapadastr</p>
+                            <small>Price: 450Kc</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+
+
+
+                    </td>
+                    <td><input type="nubmer" value="1"></td>
+                    <td>450Kc</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="img/cort-gold-d8-nat.jpg">
+                        </div>
+
+                        <div>
+                            <p>Acoustic guitar</p>
+                            <small>Price: 5300Kc</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </td>
+                    <td><input type="nubmer" value="1"></td>
+                    <td>5300Kc</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="img/alice-a206-sl-acoustic-guitar-strings.jpg">
+                        </div>
+
+                        <div>
+                            <p>String</p>
+                            <small>Price: 130Kc</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </td>
+                    <td><input type="nubmer" value="1"></td>
+                    <td>130Kc</td>
+                </tr>
+
+            </table>
+            <hr>
+            <table>
+                <div class="total-price">
+                    <table>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>4645Kc</td>
+                        </tr>
+                        <tr>
+                            <td>Tax</td>
+                            <td>1234Kc</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>5880Kc</td>
+                        </tr>
+                    </table>
+                </div>
+            </table>
+        </div>
+        <form action="/submit_delivery_info" method="post">
+            <h2>Delivery Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+        
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+        
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+              <option value="">Select country</option>
+              <option value="CZ">Czech Republic</option>
+              <option value="USA">USA</option>
+              <option value="DE">Germany</option>
+              <option value="UK">UK</option>
+            </select>
+            <p>Delivery free</p>
+        
+            <button type="submit">Order now</button>
+          </form>
+    </main>
+
+    <footer>
+        <p> &copy; 2023 Guitar Shop. All rights reserved. Created by Madiyar Batanov, Dang Duc Thang, Thi Hang Nguyen
+        </p>
+    </footer>
+</body>
+
+</html>

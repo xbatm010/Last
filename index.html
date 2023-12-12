@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar shop</title>
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/64fe8cf115.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:ital,wght@1,300;1,400;1,600;1,700&family=Playpen+Sans:wght@300;400;700&family=Public+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/queries.css">
+</head>
+
+<body>
+
+    <!--header-->
+    <header id="home">
+        <div class="logo"><a href="index.html">Guitar Shop</a>
+
+        </div>
+        <!-- Hamburger menu icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="searchBar">
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Guitar</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+
+                <li>
+                    <div class="dropdown">
+                        <img src="img/icons8-login-30.png" alt="Вход" onclick="toggleDropdown()" class="dropbtn">
+                        <div id="dropdownContent" class="dropdown-content">
+                            <form id="loginForm">
+                                <label for="username">Username:</label>
+                                <input type="text" id="username" name="username" required>
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" required>
+                                <button type="submit">Log in</button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="cart.html"><img src="img/icons8-cart-30.png" alt="cart icon"></a></li>
+                <li><a href="#" onclick="toggleMenu()"><img src="img/icons8-search-30.png" alt="search"></a></li>
+
+
+        </nav>
+    </header>
+
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('nav ul');
+            navMenu.classList.toggle('active');
+        }
+        // script.js
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdownContent");
+            dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
+        }
+
+        // Закрытие выпадающего меню, если пользователь щелкает вне него
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdownContent = document.getElementById("dropdownContent");
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                }
+            }
+        }
+    </script>
+
+    <!--Main content-->
+    <main>
+        <section class="introduction">
+            <div>
+                <h1>Welcome to Guitar Shop</h1>
+                <p>
+                    We offer a wide range of guitars including acoustic, electric, and bass guitars.<br> Whether you're
+                    a
+                    beginner
+                    or an experienced musician, we have the perfect instrument for you.<br> Our shop also provides a
+                    variety
+                    of
+                    accessories to complement your musical journey.
+                </p>
+                <p>
+                    Explore our collection online or visit our store to find the guitar that resonates with your style.
+                    <br>Feel
+                    free to contact us for any inquiries or assistance.
+                </p>
+            </div>
+
+        </section>
+
+        <h1>Upcoming Events</h1>
+
+        <section class="section">
+            <div class="slider">
+                <div class="slide">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="st first">
+                        <img src="img/TS guitar.webp" alt="">
+                    </div>
+                    <div class="st">
+                        <img src="img/tomorrowland concert.jpg" alt="">
+                    </div>
+                    <div class="st">
+                        <img src="img/TSguitar2.jpg" alt="">
+                    </div>
+                    <div class="st">
+                        <img src="img/ED guitar.jpg" alt="">
+                    </div>
+
+
+                    <div class="nav-auto">
+                        <div class="a-b1"></div>
+                        <div class="a-b2"></div>
+                        <div class="a-b3"></div>
+                        <div class="a-b4"></div>
+                    </div>
+                </div>
+                <div class="nav-m">
+                    <label for="radio1" class="m-btn"></label>
+                    <label for="radio2" class="m-btn"></label>
+                    <label for="radio3" class="m-btn"></label>
+                    <label for="radio4" class="m-btn"></label>
+                </div>
+            </div>
+
+
+        </section>
+
+        <h1>Bestsellers</h1>
+
+        <section>
+            <div class="bestsellers">
+                <div class="bestseller-item">
+                    <img src="img/ED guitar.jpg" alt="Bestseller 1">
+                    <h3>Bestseller 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                        </label></p>
+                </div>
+                <div class="bestseller-item">
+                    <img src="img/G1.jpg" alt="Bestseller 2">
+                    <h3>Bestseller 2</h3>
+                    <p>Description of bestseller 2</p>
+                </div>
+                <div class="bestseller-item">
+                    <img src="img/g2.jpg" alt="Bestseller 3">
+                    <h3>Bestseller 3</h3>
+                    <p>Description of bestseller 3</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <h1>Hello</h1>
+
+    <!--footer-->
+    <footer>
+        <p> &copy; 2023 Guitar Shop. All rights reserved. <small>Created by Madiyar Batanov, Dang Duc Thang, Thi
+                Hang
+                Nguyen</small>
+        </p>
+    </footer>
+</body>
+
+</html>
