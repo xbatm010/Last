@@ -17,9 +17,6 @@
 </head>
 
 <body>
-<h1>sajfhbajs</h1>
-<h1>jaskdhajl</h1>
-    <h1>hello</h1>
     <!--header-->
     <header id="home">
         <div class="logo"><a href="index.html">Guitar Shop</a>
@@ -37,8 +34,8 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Guitar</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="product.html">Category</a></li>
+                <li><a href="#footer">Contact</a></li>
 
 
                 <li>
@@ -55,28 +52,18 @@
                         </div>
                     </div>
                 </li>
-
                 <li>
-                    <div class="dropdown">
-                        <img src="img/icons8-cart-30.png" alt="Cart" onclick="toggleDropdown()" class="dropbtn">
-                        <div id="dropdownContent" class="dropdown-content">
-
-                        </div>
-                    </div>
+                    <a href="cart.html"><img src="img/icons8-cart-30.png" alt="Cart"></a>
                 </li>
                 <li>
-                    <div class="dropdown">
-                        <img src="img/icons8-search-30.png" alt="Вход" onclick="toggleDropdown()" class="dropbtn">
-                        <div id="dropdownContent" class="dropdown-content">
-                            <form id="loginForm">
-                                <label for="username">Username:</label>
-                                <input type="text" id="username" name="username" required>
-                                <label for="password">Password:</label>
-                                <input type="password" id="password" name="password" required>
-                                <button type="submit">Log in</button>
-                            </form>
-                        </div>
+                    <div class="search-icon" onclick="toggleSearchBar()">
+                        <img src="img/icons8-search-30.png" alt="Search Icon">
                     </div>
+                    <div id="search-bar" class="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <a href="info_product.html"><button type="button">Search</button></a>
+                    </div>
+
                 </li>
 
 
@@ -84,27 +71,7 @@
     </header>
 
 
-    <script>
-        function toggleMenu() {
-            const navMenu = document.querySelector('nav ul');
-            navMenu.classList.toggle('active');
-        }
-        // script.js
-        function toggleDropdown() {
-            var dropdownContent = document.getElementById("dropdownContent");
-            dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
-        }
 
-        // Закрытие выпадающего меню, если пользователь щелкает вне него
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdownContent = document.getElementById("dropdownContent");
-                if (dropdownContent.style.display === "block") {
-                    dropdownContent.style.display = "none";
-                }
-            }
-        }
-    </script>
 
     <!--Main content-->
     <main>
@@ -197,12 +164,44 @@
     </main>
 
     <!--footer-->
-    <footer>
+    <footer id="footer">
         <p> &copy; 2023 Guitar Shop. All rights reserved. <small>Created by Madiyar Batanov, Dang Duc Thang, Thi
                 Hang
                 Nguyen</small>
         </p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('nav ul');
+            navMenu.classList.toggle('active');
+        }
+        // script.js
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdownContent");
+            dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
+        }
+
+        // Закрытие выпадающего меню, если пользователь щелкает вне него
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdownContent = document.getElementById("dropdownContent");
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                }
+            }
+        }
+
+
+        function toggleSearchBar() {
+            var searchBar = document.getElementById("search-bar");
+            if (searchBar.style.display === "block") {
+                searchBar.style.display = "none";
+            } else {
+                searchBar.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>
