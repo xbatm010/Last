@@ -1,4 +1,4 @@
-/* -----------Default setup */
+/* -----------------------------Default setup------------------ */
 *{
   padding: 0;
   margin: 0;
@@ -11,6 +11,11 @@ html{
   background-color: #ffffff;
   text-rendering: optimizeLegibility;
 }
+/* -------------------------reuse component----------------------------- */
+
+
+/* -----------------------header---------------------------------------- */
+
 header {
     background-color: #333;
     color: #fff;
@@ -22,7 +27,7 @@ header {
     position: relative;
   }
  .introduction h1{
-  font-size: 65px;
+  font-size: 50px;
   margin-bottom: 30px;
  }
  .introduction p{
@@ -32,8 +37,8 @@ header {
 .introduction{
   position: relative;
   top: 10%;
-  left:25%;
-  width: 50%; 
+  left:20%;
+  width: 65%; 
   margin-bottom: 100px;
   
   
@@ -526,4 +531,32 @@ button:hover {
   color: #fff;
   border: none;
   cursor: pointer;
+}
+
+/* -----------------------footer--------------------------------- */
+.icons{
+  text-align: center;
+}
+.fa{
+  font-size: 40px;
+  margin-right: 9%;
+  color:rgb(255, 116, 3);
+  cursor: pointer;
+  padding: 18px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  gap: 10px;
+  margin: 0 50px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+.grid-container > div > p{
+  text-align: center;
 }
