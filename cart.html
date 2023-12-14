@@ -64,64 +64,64 @@
                     </div>
 
                 </li>
-
-
+            </ul>
         </nav>
     </header>
 
 
     <main>
-        <nav class="breadcrumbs">
-            <ul>
-                <li><a href="index.html"><img src="img/product_page/Home.png" alt="home"></a></li>
-                <li>></li>
-                <li><a href="product.html">Category</a></li>
-                <li>></li>
-                <li><a href="#">Cart</a></li>
-            </ul>
-        </nav>
-
-        <h1>Your Shopping Cart</h1>
-
-        <div class="product">
-            <img src="img/product1.png" alt="Product 1">
-            <div class="product-info">
-                <h2>Product Name 1</h2>
-                <p>Rating: 4.5 stars</p>
-                <p>Price: $19.99</p>
+        <div class="cart-container">
+            <h1>Cart</h1>
+            <div class="cart-items">
+                <div class="cart-item">
+                    <img src="img/product1.png" alt="Northstar Yo-Yo">
+                    <div class="item-details">
+                        <h2>Northstar</h2>
+                        <p>(Orange 2010 Champion Edition)</p>
+                        <p>YoYoFactory</p>
+                        <p>$24.99</p>
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                        <button class="remove-btn">REMOVE</button>
+                        <button class="update-btn">UPDATE CART</button>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="img/product2.png" alt="Northstar Yo-Yo">
+                    <div class="item-details">
+                        <h2>Northstar</h2>
+                        <p>(Orange 2010 Champion Edition)</p>
+                        <p>YoYoFactory</p>
+                        <p>$24.99</p>
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                        <button class="remove-btn">REMOVE</button>
+                        <button class="update-btn">UPDATE CART</button>
+                    </div>
+                </div><div class="cart-item">
+                <img src="img/product3.png" alt="Northstar Yo-Yo">
+                <div class="item-details">
+                    <h2>Northstar</h2>
+                    <p>(Orange 2010 Champion Edition)</p>
+                    <p>YoYoFactory</p>
+                    <p>$24.99</p>
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    <button class="remove-btn">REMOVE</button>
+                    <button class="update-btn">UPDATE CART</button>
+                </div>
+            </div>
+            <div class="cart-summary">
+                <h3>Subtotal</h3>
+                <p>$24.99</p>
+                <p>Excluding tax & shipping</p>
+                <p>ORDERS WILL BE PROCESSED IN USD.</p>
+                <textarea placeholder="Special Instructions:"></textarea>
+                <button class="checkout-btn">PROCEED TO CHECKOUT</button>
             </div>
         </div>
-
-        <div class="product">
-            <img src="img/product2.png" alt="Product 2">
-            <div class="product-info">
-                <h2>Product Name 2</h2>
-                <p>Rating: 4.0 stars</p>
-                <p>Price: $9.99</p>
-            </div>
-        </div>
-
-        <div class="product">
-            <img src="img/Product3.png" alt="Product 2">
-            <div class="product-info">
-                <h2>Product Name 2</h2>
-                <p>Rating: 4.0 stars</p>
-                <p>Price: $229.99</p>
-            </div>
-        </div>
-
-        <section class="buymore">
-            <div></div>
-
-
-        </section>
-
-
-        <div class="checkout">
-            <p>Total Price: $259.97</p>
-            <a href="payment.html"><button>Checkout</button></a>
-        </div>
-        <!--<form action="/submit_delivery_info" method="post">
+    </main>
+        <form action="/submit_delivery_info" method="post">
             <h2>Delivery Information</h2>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -146,8 +146,8 @@
             <p>Delivery free</p>
 
             <button type="submit">Order now</button>
-        </form>-->
-    </main>
+        </form>
+
     <script>
         function toggleMenu() {
             const navMenu = document.querySelector('nav ul');
@@ -159,7 +159,7 @@
             dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
         }
 
-        // Закрытие выпадающего меню, если пользователь щелкает вне него
+
         window.onclick = function (event) {
             if (!event.target.matches('.dropbtn')) {
                 var dropdownContent = document.getElementById("dropdownContent");
