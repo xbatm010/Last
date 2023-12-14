@@ -15,21 +15,40 @@
 /*  CATEGORY */
 
 .category{
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-top: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 40px; 
+    justify-content: center;
+    gap: 50px; 
 }
 
 .item{
-    width: 400px;
+    width: 350px;
     height: 100px;
     border-radius: 30px;
     text-align: center;
+    border-style: solid;
+    background-color: rgb(186, 186, 186);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    border-color: black;
+    
 }
 
-.div{
+.cate_image{
+    width: 110px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.cate_image img{
+    max-height: 65px;
+}
+
+.item p{
+    margin-left: 10px;
 }
