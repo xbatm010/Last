@@ -17,36 +17,35 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Guitar</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="cart.html">Cart</a></li>
-            </ul>
-        </nav>
-
-        <div class="logo">
-            <a href="#home">Guitar Shop</a>
+    <header id="home">
+        <div class="logo"><a href="#home"></a>
+            Guitar Shop
         </div>
-
+        <!-- Hamburger menu icon -->
         <div class="hamburger" onclick="toggleMenu()">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
-
+        <!-- header content -->
         <div class="search-container">
             <input type="text" class="search-box" placeholder="Search...">
             <button class="search-button">Search</button>
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="category.html">Guitar</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="breadcrumb">
         <nav>
-            <a href="category.html">Guitar</a>
+            <a href="product.html">Guitar</a>
             <img class="icon" src="img/product_page/bigger_sign.png">
             <a href="/product.html">Bestseller</a>
             <img class="icon" src="img/product_page/bigger_sign.png">
@@ -60,10 +59,10 @@
                 <section class="product_img">
                     <img class="img" src="/img/info_product/e1.png" alt="Product Main Image">
                     <div class="small_images">
-                        <img src="/img/dog1.jpg" alt="Small Image 1">
-                        <img src="/img/dog1.jpg" alt="Small Image 2">
-                        <img src="/img/dog1.jpg" alt="Small Image 3">
-                        <img src="/img/dog1.jpg" alt="Small Image 4">
+                        <img src="/img/info_product/i5.png">
+                        <img src="/img/info_product/i5.png">
+                        <img src="/img/info_product/i5.png">
+                        <img src="/img/info_product/i5.png">
                     </div>
                 </section>
                 
@@ -76,7 +75,7 @@
                             <img class="rating_star" src="/img/product_page/rating_star.png">
                             <img class="rating_star" src="/img/product_page/rating_star.png">
                             <img class="rating_star" src="/img/product_page/rating_star.png">
-                            <span>4.7(21)</span>
+                            <span>4.7<a href="#block2">(3x rated)</a></span>
                         </p>
                     </div>
 
@@ -120,7 +119,7 @@
                 <li><strong>Switch:</strong> 5 Way</li>
                 <li><strong>Tuning Machines:</strong> Ibanez</li>
             </ul>
-            <div id="additional-parameters" class="additional-parameters" style="display: none;">
+            <div id="additional-parameters" class="additional-parameters">
                 <ul>
                     <li><strong>Handedness:</strong> Right Handed</li>
                     <li><strong>Colour:</strong> Burst</li>
@@ -148,12 +147,141 @@
                 </ul>
             </div>
         </div>
- 
-    
         <button class="toggle-parameters-btn" id="toggle-parameters-btn" onclick="toggleParameters()">Show More Parameters</button>
     </div>
 
-    <footer style="margin-top: 50px;">
+    <div id="block2" class="block2" >
+        <h1>Ratings</h1>
+        <div class="rating_display">
+            <article class="rating_display_item">
+                <div class="rating_display_info">
+                    <img src="/img/info_product/user1.jpg">
+                    <div>
+                        <div>David</div>
+                        <div class="product-rating">
+                            <p class="rating">
+                                <img class="rating_star" src="/img/product_page/rating_star.png">
+                                <img class="rating_star" src="/img/product_page/rating_star.png">
+                                <img class="rating_star" src="/img/product_page/rating_star.png">
+                                <img class="rating_star" src="/img/product_page/rating_star.png">
+                                <img class="rating_star" src="/img/product_page/rating_star.png">
+                            </p>
+                        </div>
+                        <time>06.05.2023</time>
+                    </div>
+                </div>
+            </article>
+
+            <div class="rating_display_item">
+                This product made me feel like a rockstar even though my only audience was my cat. Five stars for turning my living room into a concert hall!
+            </div>
+
+            <div class="rating_display_item">
+                <div class="rating_display_info">
+                    <img src="/img/info_product/user2.jpg">
+                    <div>
+                        <div>Sarah</div>
+
+                        <div class="product-rating">
+                            <p class="rating">
+                                <img class="rating_star" src="/img/product_page/rating_star.png">
+                                <img class="rating_star" src="/img/product_page/rating_star.png">
+                                <img class="rating_star" src="/img/product_page/rating_star.png">
+                                <img class="rating_star" src="/img/product_page/rating_star.png">
+                                <img class="rating_star" src="/img/product_page/rating_star.png">
+                            </p>
+                        </div>
+                        <time>25.08.2023</time>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rating_display_item">
+                Bought this guitar, and my cat's expression went from 'meh' to 'rock on.' If it impresses the feline critic, you know it's purr-fect!
+            </div>
+
+            <div class="rating_display_item">
+                <div class="rating_display_info">
+                    <img src="/img/info_product/user3.jpg">
+                    <div>
+                        <div>Brian</div>
+                        <div class="product-rating">
+                            <p class="rating">
+                                <img class="rating_star" src="/img/product_page/rating_star.png">
+                                <img class="rating_star" src="/img/product_page/rating_star.png">
+                                <img class="rating_star" src="/img/product_page/rating_star.png">
+                                <img class="rating_star" src="/img/product_page/rating_star.png">
+                                <img class="rating_star" src="/img/product_page/rating_star.png">
+                            </p>
+                        </div>
+                        <time>05.12.2023</time>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rating_display_item">
+                I was worried my dog wouldn't appreciate my musical talent, but with this guitar, he's my number one fan. He even has a backstage pass. It's called the living room!
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="block3">
+        <h1>We have also selected for you</h1>
+        
+
+        <div class="category">
+            <a href="#" class="item">
+                <div class="cate_image">
+                    <img src="/img/info_product/r1.png">
+                </div>
+                <p>Ibanez GRG121DX-BKF Black </p>
+            </a>
+    
+            <a href="#" class="item">
+                <div class="cate_image">
+                    <img src="/img/info_product/r2.png">
+                </div>
+                <p>Jackson JS11 Dinky AH White</p>
+            </a>
+    
+            <a href="#" class="item">
+                <div class="cate_image">
+                    <img src="/img/info_product/r3.png">
+                </div>
+                <p>Jackson JS32 King V AH Black</p>
+            </a>
+    
+            <a href="#" class="item">
+                <div class="cate_image">
+                    <img src="/img/info_product/r4.png">
+                </div>
+                <p>Ibanez GRX70QA-TRB Transparent</p>
+            </a>
+    
+            <a href="#" class="item">
+                <div class="cate_image">
+                    <img src="/img/info_product/r5.png">
+                </div>
+                <p>Ibanez GRGR131EX-BKF Black</p>
+            </a>
+    
+            <a href="#" class="item">
+                <div class="cate_image">
+                    <img src="/img/info_product/r6.png">
+                </div>
+                <p>SX Vintage ST 57 Vintage White</p>
+            </a>
+    
+    
+    
+        </div>
+
+    </div>
+
+
+    <footer>
         <p>&copy; 2023 Guitar Shop. All rights reserved. Created by Madiyar Batanov, Dang Duc Thang, Thi Hang Nguyen</p>
     </footer>
 
