@@ -13,9 +13,24 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-/* -------------------------reuse component----------------------------- */
+/* -------------------------main body set up---------------------------- */
 
-
+.main-container{
+  display: grid;
+  grid-template-columns: 15% 85%;
+  gap: 1%;
+}
+.left-bar{
+  margin-top: 2%;
+  background-color: rgb(212 212 212);
+}
+.left-bar ul{
+  list-style: none;
+}
+.header-panel h1{
+ margin-left: 35%;
+ margin-top: 2%;
+}
 /* -----------------------header---------------------------------------- */
 
 header {
@@ -99,7 +114,7 @@ nav ul li a:hover {
 }
 
 /* ---------------slider pannels--------------------- */
-.section {
+.panel {
   height: 500px;
   display: flex;
   justify-content: center;
@@ -217,69 +232,6 @@ nav ul li a:hover {
   background-color: rgb(104, 163, 211);
 }
 
-/* --------------------------bestseller section----------------------- */
-/* ------------------------------------------------------------------- */
-.row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-h1 {
-  text-align: center;
-  font-size: 30px;
-}
-
-p {
-  text-align: justify;
-  line-height: 1.6;
-  text-align: center;
-  font-size: 100%;
-}
-
-.bestsellers {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-
-.bestseller-item {
-  width: 250px;
-  padding: 15px;
-  margin-bottom: 20px;
-  background-color: #f4f4f4;
-  text-align: center;
-}
-
-.bestseller-item img {
-  max-width: 100%;
-  height: auto;
-}
-
-.bestseller-item h3 {
-  margin-top: 10px;
-}
-
-.categories {
-  margin-top: 30px;
-}
-
-.category-title {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.sub-categories {
-  margin-left: 20px;
-}
-
-
-.electric:hover .categories-dropdown {
-  display: block;
-}
 
 /* -----------------------Style for the search bar------------------------------------- */
 .search-container {
@@ -405,9 +357,6 @@ th :last-child {
   text-align: right;
 }
 
-main {
-  padding: 4%;
-}
 
 .container2 {
   display: flex;
@@ -470,6 +419,9 @@ button:hover {
 .dropdown {
   position: relative;
   display: inline-block;
+}
+.dropdown img{
+  background-color: rgb(255, 153, 0) ;
 }
 
 .dropbtn {
@@ -570,6 +522,9 @@ footer {
   /* font-size: 140%; */
   font-weight: bold;
 }
+.social-media h1{
+  padding-left: 40%;
+}
 
 .footer-img{
 height: 400px;
@@ -626,6 +581,9 @@ background-color: rgb(255, 153, 0);
 
 footer h1{
   font-size: 140%;
+}
+footer{
+  background-image: url("https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?w=1380&t=st=1701865937~exp=1701866537~hmac=b84c89128f5499cad7454b0cb6cafe971805fe91bc5ea7b54bf3eff30ef2f00b");
 }
 .contact-infor ul{
   list-style: none;
