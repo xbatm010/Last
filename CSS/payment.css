@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.checkout-container {
+    background: white;
+    width: 450px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+input[type=email],
+input[type=text],
+select,
+button[type=submit] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type=submit] {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=radio] {
+    margin-right: 5px;
+}
+
+.payment-methods label {
+    display: block;
+    margin: 10px 0;
+}
