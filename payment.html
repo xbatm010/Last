@@ -20,8 +20,7 @@
 <body>
     <!--header-->
     <header id="home">
-        <div class="logo"><a href="index.html">Guitar Shop</a>
-
+        <div class="logo"><a href="index.html">Perfect Guitar</a>
         </div>
         <!-- Hamburger menu icon -->
         <div class="hamburger" onclick="toggleMenu()">
@@ -35,19 +34,21 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Category</a></li>
-                <li><a href="#footer">Contact</a></li>
+                <li><a href="product.html">Guitar</a></li>
+                <li><a href="contact.html">Contact</a></li>
 
 
                 <li>
                     <div class="dropdown">
-                        <img src="img/icons8-login-30.png" alt="Вход" onclick="toggleDropdown()" class="dropbtn">
+                        <i class="far fa-user" alt="Login" onclick="toggleDropdown()" class="dropbtn"></i>
+
                         <div id="dropdownContent" class="dropdown-content">
+                            
                             <form id="loginForm">
                                 <label for="username">Username:</label>
-                                <input type="text" id="username" name="username"  >
+                                <input type="text" id="username" name="username" required>
                                 <label for="password">Password:</label>
-                                <input type="password" id="password" name="password"  >
+                                <input type="password" id="password" name="password" required>
                                 <button type="submit">Log in</button>
                             </form>
                         </div>
@@ -139,6 +140,108 @@
         </div>
      
     </main>
+        <!-------------footer------------------------------------------>
+        <footer>
+            <section>
+                <div class="services-container">
+                    <div>
+                        <i class="fas fa-truck"></i>
+                        <p>free delivery </p>
+                    </div>
+                    <div>
+                        <i class="fas fa-check"></i>
+                        <p>Price guarantee</p>
+                    </div>
+                    <div>
+                        <i class="far fa-handshake"></i>
+                        <p>Our services</p>
+                    </div>
+    
+                    <div>
+                        <i class="fas fa-comments"></i>
+                        <p>Support 24/7</p>
+                    </div>
+    
+                </div>
+            </section>
+            <section class="footer-img">
+                <img src="img/onedirection.webp" alt="">
+    
+            </section>
+            <section>
+                <div class="purchase-container">
+                    <img src="img/visa.png" alt="">
+                    <img src="img/mastercard.png" alt="">
+                    <img src="img/paypal.png" alt="">
+                    <img src="img/applepay.png" alt="">
+                    <img src="img/gpay.png" alt="">
+                    <img src="img/isic.png" alt="">
+                </div>
+    
+            </section>
+            <section class="about-container">
+                <div class="shop-infor">
+                    <h1>Perfect Guitar</h1>
+    
+                    <p>About us </p>
+                    <p>Our product</p>
+                </div>
+                <div class="contact-infor">
+    
+                <div class="social-media">
+                    <h1>Follow us</h1>
+                    <div class="icons">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                    <div>
+                        <p>Mon. - Fri. 8:30 - 19:00 | Sat. - Sun. 10:30 - 18:00</p>
+                    </div>
+                </div>
+                
+            </section>
+            
+            <footer class="footer">
+                <p> &copy; 2023 Perfect Guitar</p>
+                <p> Created by Thi Hang Nguyen</p>
+            </footer>
+    
+        </footer>
+    
+    
+        <script>
+            function toggleMenu() {
+                const navMenu = document.querySelector('nav ul');
+                navMenu.classList.toggle('active');
+            }
+            // script.js
+            function toggleDropdown() {
+                var dropdownContent = document.getElementById("dropdownContent");
+                dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
+            }
+    
+            // Закрытие выпадающего меню, если пользователь щелкает вне него
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdownContent = document.getElementById("dropdownContent");
+                    if (dropdownContent.style.display === "block") {
+                        dropdownContent.style.display = "none";
+                    }
+                }
+            }
+    
+    
+            function toggleSearchBar() {
+                var searchBar = document.getElementById("search-bar");
+                if (searchBar.style.display === "block") {
+                    searchBar.style.display = "none";
+                } else {
+                    searchBar.style.display = "block";
+                }
+            }
+        </script>
 
     <footer id="footer">
         <p> &copy; 2023 Guitar Shop. All rights reserved. <small>Created by Madiyar Batanov, Dang Duc Thang, Thi

@@ -481,7 +481,7 @@ button:hover {
 
 .dropdown-content {
   top: 69px;
-  left: 8px;
+  left: -200%;
   display: none;
   position: absolute;
   background-color: #333;
