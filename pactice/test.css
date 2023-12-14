@@ -1,0 +1,33 @@
+
+
+body, html{
+    overflow-x: hidden;
+}
+.main {
+    height: 1000px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 30px;
+    border: 1px solid #c3c3c3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px; 
+}
+
+.main div {
+  width: 400px;
+  height: 120px;
+  border-radius: 30px;
+  text-align: center;
+  
+}
+
+.wrapper div{
+  width: 400px;
+  height: 120px;
+  border-radius: 30px;
+  text-align: center;
+  
+}
+

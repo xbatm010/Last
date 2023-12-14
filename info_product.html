@@ -4,40 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guitar shop</title>
+    <title>Guitar Shop</title>
     <link rel="stylesheet" href="CSS/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://kit.fontawesome.com/64fe8cf115.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:ital,wght@1,300;1,400;1,600;1,700&family=Playpen+Sans:wght@300;400;700&family=Public+Sans:wght@300;400&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:ital,wght@1,300;1,400;1,600;1,700&family=Playpen+Sans:wght@300;400;700&family=Public+Sans:wght@300;400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="CSS/queries.css">
-    <link rel="stylesheet" href="CSS/product.css">
     <link rel="stylesheet" href="CSS/info-product.css">
-
-
-    
 </head>
 
-
 <body>
-    <header id="home">
-        <div class="logo"><a href="#home"></a>
-            Guitar Shop
-        </div>
-        <!-- Hamburger menu icon -->
-        <div class="hamburger" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <!-- header content -->
-        <div class="search-container">
-            <input type="text" class="search-box" placeholder="Search...">
-            <button class="search-button">Search</button>
-        </div>
+    <header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -47,97 +27,154 @@
                 <li><a href="cart.html">Cart</a></li>
             </ul>
         </nav>
+
+        <div class="logo">
+            <a href="#home">Guitar Shop</a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Search...">
+            <button class="search-button">Search</button>
+        </div>
     </header>
 
+    <div class="breadcrumb">
+        <nav>
+            <a href="category.html">Guitar</a>
+            <img class="icon" src="img/product_page/bigger_sign.png">
+            <a href="/product.html">Bestseller</a>
+            <img class="icon" src="img/product_page/bigger_sign.png">
+            <a href="#">Ibanez GRGM21M-WNS Sunburst</a>
+        </nav>
+    </div>
 
+    <main>
+        <div class="product_info_wrapper">
+            <article class="product_info">
+                <section class="product_img">
+                    <img class="img" src="/img/info_product/e1.png" alt="Product Main Image">
+                    <div class="small_images">
+                        <img src="/img/dog1.jpg" alt="Small Image 1">
+                        <img src="/img/dog1.jpg" alt="Small Image 2">
+                        <img src="/img/dog1.jpg" alt="Small Image 3">
+                        <img src="/img/dog1.jpg" alt="Small Image 4">
+                    </div>
+                </section>
+                
+                <section class="product_content">
+                    <h2 class="product-title">Ibanez GRGM21M-WNS Sunburst</h2>
+                    <div class="product-rating">
+                        <p class="rating">
+                            <img class="rating_star" src="/img/product_page/rating_star.png">
+                            <img class="rating_star" src="/img/product_page/rating_star.png">
+                            <img class="rating_star" src="/img/product_page/rating_star.png">
+                            <img class="rating_star" src="/img/product_page/rating_star.png">
+                            <img class="rating_star" src="/img/product_page/rating_star.png">
+                            <span>4.7(21)</span>
+                        </p>
+                    </div>
+
+                    <div class="product-detail">
+                        <h2>About this item:</h2>
+                        <p>GRG miKro puts out sound way beyond its size. Perfect for young rockers on the way up or seasoned
+                            road warriors on the tour bus. GRGM21M is an electric guitar, features a Basswood body.</p>
+                        <ul>
+                            <li>Color: <span>Brust</span></li>
+                            <li>Available: <span>in stock</span></li>
+                            <li>Category: <span>Electric Guitar</span></li>
+                            <li>Shipping Area: <span>All over the world</span></li>
+                            <li>Shipping Fee: <span>Free</span></li>
+                        </ul>
+                        <a href="#block1">Read More</a>
+                        <p>Price: 5 239 Kč</p>
+                        <div class="add_button">
+                            <button class="num_item_add">-</button>
+                            <span>1</span>
+                            <button class="num_item_remove">+</button>
+                        </div>
+
+                        <button class="add_item">Add to Cart</button>
+                    </div>
+                </section>
+            </article>
+        </div>
+
+    </main>
+
+    <div id="block1" class="block1">
+        <h1>Description</h1>
+        <h2>Ibanez GRGM21M-WNS Sunburst</h2>
+        <h4>GRG miKro puts out sound way beyond its size. Perfect for young rockers on the way up or seasoned road warriors on the tour bus. GRGM21M is electric guitar, features Baswood body. GRGM Maple neck with 564mm scale length. Maple fretboard with medium frets and 400mm radius and 41mm nut. Ibanez F106 bridge. Pickup: Infinity R (H) neck pickup (Passive/Ceramic), Infinity R (H) bridge pickup (Passive/Ceramic). Chrome hardware. Finish: Walnut Sunburst</h4>
+    
+        <h2>Parameters and Specifications</h2>
+        <div class="parameters">
+            <ul>
+                <li><strong>Number of Strings:</strong> 6</li>
+                <li><strong>Controls:</strong> Volume, Tone</li>
+                <li><strong>Switch:</strong> 5 Way</li>
+                <li><strong>Tuning Machines:</strong> Ibanez</li>
+            </ul>
+            <div id="additional-parameters" class="additional-parameters" style="display: none;">
+                <ul>
+                    <li><strong>Handedness:</strong> Right Handed</li>
+                    <li><strong>Colour:</strong> Burst</li>
+                    <li><strong>Number of Frets:</strong> 24</li>
+                    <li><strong>Pickups Configuration:</strong> HH</li>
+                    <li><strong>Series:</strong> GRGRM</li>
+                    <li><strong>Pickups:</strong> Passive</li>
+                    <li><strong>Bridge Pickup:</strong> Ibanez Infinity R</li>
+                    <li><strong>Neck Pickup:</strong> Ibanez Infinity R</li>
+                    <li><strong>Bridge/Tremolo:</strong> F106</li>
+                    <li><strong>Fretboard Inlays:</strong> Black Dot</li>
+                    <li><strong>Gauge:</strong> 010" / 046"</li>
+                    <li><strong>Nut:</strong> Plastic</li>
+                    <li><strong>Original Colour by Producer:</strong> Walnut Sunburst</li>
+                    <li><strong>Finish:</strong> Polished</li>
+                    <li><strong>Body:</strong> Basswood</li>
+                    <li><strong>Neck:</strong> Maple</li>
+                    <li><strong>Fretboard:</strong> Maple</li>
+                    <li><strong>Neck Finish:</strong> Satin Polyurethane</li>
+                    <li><strong>Construction Method:</strong> Bolt-on</li>
+                    <li><strong>Hardware:</strong> Chrome</li>
+                    <li><strong>Truss Rod:</strong> Dual Action</li>
+        
+    
+                </ul>
+            </div>
+        </div>
+ 
+    
+        <button class="toggle-parameters-btn" id="toggle-parameters-btn" onclick="toggleParameters()">Show More Parameters</button>
+    </div>
+
+    <footer style="margin-top: 50px;">
+        <p>&copy; 2023 Guitar Shop. All rights reserved. Created by Madiyar Batanov, Dang Duc Thang, Thi Hang Nguyen</p>
+    </footer>
 
     <script>
         function toggleMenu() {
             const navMenu = document.querySelector('nav ul');
             navMenu.classList.toggle('active');
-
+        }
+        function toggleParameters() {
+            var parametersContainer = document.getElementById("additional-parameters");
+            var button = document.getElementById("toggle-parameters-btn");
+    
+            if (parametersContainer.style.display === "none" || parametersContainer.style.display === "") {
+                parametersContainer.style.display = "block";
+                button.textContent = "Show Less Parameters";
+            } else {
+                parametersContainer.style.display = "none";
+                button.textContent = "Show More Parameters";
+            }
         }
     </script>
-
-<div class="productpage_styling" >
-    <div>
-        <div class="breadcrumb">
-            <a href="#"> Guitar</a>
-            <img class="icon" src="img/product_page/bigger_sign.png">
-            <a href="/product2.html">Electric Guitars</a>
-            <img class="icon" src="img/product_page/bigger_sign.png">
-            <a href="#">BLOND AD-42S NA</a>
-        </div>
-        <main class="container123">
-
-            <div class="infoproduct_styling" >
-                <main class="info_product">
-                     <div class="flex1">
-                        <img src="img/product_page/guitar1.png">
-                    </div>
-                    <div class="flex2">
-                        <h1>BLOND AD-42S NA</h1>
-                        <h3>Acoustical Guitar</h3>
-                        <h4>Price: 2 890 Kč</h4>
-                        <div class="line"></div>
-                        <p>The Blond AD-42S NA acoustic guitar is an affordable instrument suitable for both beginners and more experienced players....</p>
-                        <a>READ MORE</a>
-        
-                        <div class="line"></div>
-                        <button class="b">Add to Cart</button>
-                    </div>
-                </main>
-                <div class="line2"></div>
-                <h2>DESCRIPTION</h2>
-                <div class="title">
-                    <div class="content">
-                        <p>
-                            The Blond AD-42S NA acoustic guitar is an affordable instrument suitable for both beginners and more experienced players. This is a classic Dreadnought with a solid spruce top, laminated rosewood back and sides, okoume neck, modern composite fingerboard, closed die-cast tuners and a gloss finish front. The Blond AD-42S NA acoustic guitar combines affordability with quality craftsmanship, making it an excellent choice for musicians at any skill level. Whether you're just starting your musical journey or looking for a reliable instrument to add to your collection, this guitar delivers a classic Dreadnought design with a host of features that enhance both playability and tone.
-                        </p>
-                    </div>
-                </div>
-                
-
-                
-            </div>
-            <h3>Parameters</h3>
-            <ul>
-                <li>Manufacturer's color: Natural</li>
-                <li>Color: Natural</li>
-                <li>Surface treatment: Gloss</li>
-                <li>Guitar Type: Dreadnought</li>
-                <li>Cutout: No</li>
-                <li>Body: Semi-massive</li>
-                <li>Front panel: Spruce-solid</li>
-                <li>Backboard: Rosewood</li>
-                <li>Backwoods: Rosewood</li>
-                <li>Neck: Okoume</li>
-                <li>Scale: 648 mm</li>
-                <li>Number of frets: 20</li>
-                <li>Width of zero fret: 43 mm</li>
-                <li>Fingerboard: Tech Wood</li>
-                <li>Bridge: Tech Wood</li>
-                <li>Country of manufacture: China</li>
-
-            </ul>
-
-        </main>
-        
-    </div>
-    
-</div>
-
-
-
-
-
-    <footer>
-        <p> &copy; 2023 Guitar Shop. All rights reserved. Created by Madiyar Batanov, Dang Duc Thang, Thi Hang
-            Nguyen
-        </p>
-    </footer>
-
-
 </body>
 
 </html>

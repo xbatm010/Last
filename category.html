@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar shop</title>
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/64fe8cf115.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:ital,wght@1,300;1,400;1,600;1,700&family=Playpen+Sans:wght@300;400;700&family=Public+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/queries.css">
+    <link rel="stylesheet" href="CSS/category.css">
+
+
+</head>
+
+
+<body>
+    <header id="home">
+        <div class="logo"><a href="#home"></a>
+            Guitar Shop
+        </div>
+        <!-- Hamburger menu icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <!-- header content -->
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Search...">
+            <button class="search-button">Search</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="category.html">Guitar</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="headingh1">GUITAR</h1>
+
+    <div class="line"></div>
+
+    <div class="category">
+        <a href="product.html" class="item">
+            <div class="cate_image">
+                <img src="/img/category_page/bestseller.png">
+            </div>
+            <p>Best Seller</p>
+        </a>
+
+        <a href="product2.html" class="item">
+            <div class="cate_image">
+                <img src="/img/category_page/cate1.png">
+            </div>
+            <p>Electric Guitars</p>
+        </a>
+
+        <a href="product3.html" class="item">
+            <div class="cate_image">
+                <img src="/img/category_page/cate2.png">
+            </div>
+            <p>Acoustical Guitars</p>
+        </a>
+
+        <a href="product4.html" class="item">
+            <div class="cate_image">
+                <img src="/img/category_page/cate3.png">
+            </div>
+            <p>Classical Guitars</p>
+        </a>
+
+        <a href="product5.html" class="item">
+            <div class="cate_image">
+                <img src="/img/category_page/cate4.png">
+            </div>
+            <p>Lefthanded Guitars</p>
+        </a>
+
+        <a href="product6.html" class="item">
+            <div class="cate_image">
+                <img src="/img/category_page/cate5.png">
+            </div>
+            <p>Ukuleles</p>
+        </a>
+
+
+
+    </div>
+
+
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('nav ul');
+            navMenu.classList.toggle('active');
+
+        }
+    </script>
+
+
+
+
+    <footer>
+        <p> &copy; 2023 Guitar Shop. All rights reserved. Created by Madiyar Batanov, Dang Duc Thang, Thi Hang
+            Nguyen
+        </p>
+    </footer>
+
+
+</body>
+
+</html>
