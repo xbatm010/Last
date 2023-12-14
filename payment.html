@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar shop</title>
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/64fe8cf115.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:ital,wght@1,300;1,400;1,600;1,700&family=Playpen+Sans:wght@300;400;700&family=Public+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/queries.css">
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+
+<body>
+    <!--header-->
+    <header id="home">
+        <div class="logo"><a href="index.html">Guitar Shop</a>
+
+        </div>
+        <!-- Hamburger menu icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="searchBar">
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Category</a></li>
+                <li><a href="#footer">Contact</a></li>
+
+
+                <li>
+                    <div class="dropdown">
+                        <img src="img/icons8-login-30.png" alt="Вход" onclick="toggleDropdown()" class="dropbtn">
+                        <div id="dropdownContent" class="dropdown-content">
+                            <form id="loginForm">
+                                <label for="username">Username:</label>
+                                <input type="text" id="username" name="username"  >
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password"  >
+                                <button type="submit">Log in</button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="cart.html"><img src="img/icons8-cart-30.png" alt="Cart"></a>
+                </li>
+                <li>
+                    <div class="search-icon" onclick="toggleSearchBar()">
+                        <img src="img/icons8-search-30.png" alt="Search Icon">
+                    </div>
+                    <div id="search-bar" class="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <a href="info_product.html"><button type="button">Search</button></a>
+                    </div>
+
+                </li>
+
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="checkout-container">
+            <h2>Contact</h2>
+            <input type="email" placeholder="Email"  >
+            <label>
+                <input type="checkbox"> Email me with news and offers
+            </label>
+    
+            <h3>Delivery</h3>
+            <form class="delivery-form" action="process_delivery.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name"  >
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address"  >
+                </div>
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city"  >
+                </div>
+                <div class="form-group">
+                    <label for="zip">ZIP Code:</label>
+                    <input type="text" id="zip" name="zip"  >
+                </div>
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country"  >
+                        <option value="CZ">Czechia</option>
+                        <option value="VIET">Vietnam</option>
+                        <option value="KZ">Kazakhstan</option>
+                  
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="delivery-method">Select Delivery Method:</label>
+                    <select id="delivery-method" name="delivery-method">
+                        <option value="standard">Standard Delivery</option>
+                        <option value="express">Express Delivery</option>
+                        <option value="overnight">DHL Delivery</option>
+                        <option value="overnight">FedEx Delivery</option>
+                        <option value="overnight">UPC Delivery</option>
+                    </select>
+                </div>
+              
+            </form>
+            
+            <h2>Payment</h2>
+            <p>All transactions are secure and encrypted.</p>
+            <div class="payment-methods">
+                <label>
+                    <input type="radio" name="payment-method" checked> Credit card
+                    
+                </label>
+                
+            </div>
+            <input type="text" placeholder="Card number"  >
+            <input type="text" placeholder="Expiration date (MM/YY)"  >
+            <input type="text" placeholder="Security code"  >
+           
+            <label>
+                <input type="checkbox"> Use shipping address as billing address
+            </label>
+            <a href="purchaseconfirm.html"><button type="submit">Pay now</button></a>
+        </div>
+     
+    </main>
+
+    <footer id="footer">
+        <p> &copy; 2023 Guitar Shop. All rights reserved. <small>Created by Madiyar Batanov, Dang Duc Thang, Thi
+                Hang
+                Nguyen</small>
+        </p>
+    </footer>
+
+
+</body>
+</html>

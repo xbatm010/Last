@@ -561,6 +561,7 @@ footer {
   display: grid;
   grid-template-columns: 24% 24% 24% 24%;
   gap: 1%;
+  padding-top: 5%;
 }
 
 .services-container>div {

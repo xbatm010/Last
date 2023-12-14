@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            Guitar Shop
+    <!--header-->
+    <header id="home">
+        <div class="logo"><a href="index.html">Perfect Guitar</a>
         </div>
         <!-- Hamburger menu icon -->
         <div class="hamburger" onclick="toggleMenu()">
@@ -19,42 +19,47 @@
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
-        <!-- ... (existing header content) ... -->
-        <div class="search-container">
-            <input type="text" class="search-box" placeholder="Search...">
-            <button class="search-button">Search</button>
+        <div class="searchBar">
+
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li class="acoustic">
-                    <a href="#">Acoustic Guitars</a>
-                    <!-- Categories dropdown for Acoustic Guitars -->
-                    <div class="categories-dropdown">
+                <li><a href="product.html">Guitar</a></li>
+                <li><a href="contact.html">Contact</a></li>
 
-                        <ul>
-                            <li><a href="#">Steel-string Acoustic Guitars</a></li>
-                            <li><a href="#">Classical Acoustic Guitars</a></li>
-                            <!-- Add more categories and their respective links as needed -->
-                        </ul>
+
+                <li>
+                    <div class="dropdown">
+                        <i class="far fa-user" alt="Вход" onclick="toggleDropdown()" class="dropbtn"></i>
+                        <div id="dropdownContent" class="dropdown-content">
+                            <form id="loginForm">
+                                <label for="username">Username:</label>
+                                <input type="text" id="username" name="username" required>
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" required>
+                                <button type="submit">Log in</button>
+                            </form>
+                        </div>
                     </div>
                 </li>
-
-                <li class="electric">
-                    <a href="#">Electric Guitars</a>
-                    <div class="categories-dropdown">
-                        <ul>
-                            <li><a href="#">Solid-body Electric Guitars</a></li>
-                            <li><a href="#">Hollow-body Electric Guitars</a></li>
-                            <!-- Add more categories and their respective links as needed -->
-                        </ul>
-                    </div>
+                <li>
+                    <a href="cart.html"><img src="img/icons8-cart-30.png" alt="Cart"></a>
                 </li>
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+                <li>
+                    <div class="search-icon" onclick="toggleSearchBar()">
+                        <img src="img/icons8-search-30.png" alt="Search Icon">
+                    </div>
+                    <div id="search-bar" class="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <a href="info_product.html"><button type="button">Search</button></a>
+                    </div>
+
+                </li>
+
+
         </nav>
-    </header>
+    </header>>
 
 
     <script>
