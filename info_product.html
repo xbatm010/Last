@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guitar Shop</title>
-    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/home1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://kit.fontawesome.com/64fe8cf115.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,8 +18,8 @@
 
 <body>
     <header id="home">
-        <div class="logo"><a href="#home"></a>
-            Guitar Shop
+        <div class="logo"><a href="index.html">Guitar Shop</a>
+
         </div>
         <!-- Hamburger menu icon -->
         <div class="hamburger" onclick="toggleMenu()">
@@ -27,19 +27,45 @@
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
-        <!-- header content -->
-        <div class="search-container">
-            <input type="text" class="search-box" placeholder="Search...">
-            <button class="search-button">Search</button>
+        <div class="searchBar">
+
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="category.html">Guitar</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="cart.html">Cart</a></li>
-            </ul>
+                <li><a href="product.html">Category</a></li>
+                <li><a href="#footer">Contact</a></li>
+
+
+                <li>
+                    <div class="dropdown">
+                        <img src="img/icons8-login-30.png" alt="Вход" onclick="toggleDropdown()" class="dropbtn">
+                        <div id="dropdownContent" class="dropdown-content">
+                            <form id="loginForm">
+                                <label for="username">Username:</label>
+                                <input type="text" id="username" name="username"  >
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password"  >
+                                <button type="submit">Log in</button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="cart.html"><img src="img/icons8-cart-30.png" alt="Cart"></a>
+                </li>
+                <li>
+                    <div class="search-icon" onclick="toggleSearchBar()">
+                        <img src="img/icons8-search-30.png" alt="Search Icon">
+                    </div>
+                    <div id="search-bar" class="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <a href="info_product.html"><button type="button">Search</button></a>
+                    </div>
+
+                </li>
+
+
         </nav>
     </header>
 
@@ -57,12 +83,12 @@
         <div class="product_info_wrapper">
             <article class="product_info">
                 <section class="product_img">
-                    <img class="img" src="/img/info_product/e1.png" alt="Product Main Image">
+                    <img class="img" src="/img/info_product/m1.png" alt="Product Main Image">
                     <div class="small_images">
-                        <img src="/img/info_product/i5.png">
-                        <img src="/img/info_product/i5.png">
-                        <img src="/img/info_product/i5.png">
-                        <img src="/img/info_product/i5.png">
+                        <img src="/img/info_product/m2.png">
+                        <img src="/img/info_product/m3.jpg">
+                        <img src="/img/info_product/m4.jpg">
+                        <img src="/img/info_product/m5.jpg">
                     </div>
                 </section>
                 
@@ -234,42 +260,42 @@
         <div class="category">
             <a href="#" class="item">
                 <div class="cate_image">
-                    <img src="/img/info_product/r1.png">
+                    <img src="img/product_page/acoustical_guitar/a2.png">
                 </div>
                 <p>Ibanez GRG121DX-BKF Black </p>
             </a>
     
             <a href="#" class="item">
                 <div class="cate_image">
-                    <img src="/img/info_product/r2.png">
+                    <img src="img/product_page/acoustical_guitar/a1.png">
                 </div>
                 <p>Jackson JS11 Dinky AH White</p>
             </a>
     
             <a href="#" class="item">
                 <div class="cate_image">
-                    <img src="/img/info_product/r3.png">
+                    <img src="img/product_page/left_guitar/l1.png">
                 </div>
                 <p>Jackson JS32 King V AH Black</p>
             </a>
     
             <a href="#" class="item">
                 <div class="cate_image">
-                    <img src="/img/info_product/r4.png">
+                    <img src="img/product_page/left_guitar/l2.png">
                 </div>
                 <p>Ibanez GRX70QA-TRB Transparent</p>
             </a>
     
             <a href="#" class="item">
                 <div class="cate_image">
-                    <img src="/img/info_product/r5.png">
+                    <img src="img/product_page/electric_guitar/e1.png">
                 </div>
                 <p>Ibanez GRGR131EX-BKF Black</p>
             </a>
     
             <a href="#" class="item">
                 <div class="cate_image">
-                    <img src="/img/info_product/r6.png">
+                    <img src="img/product_page/electric_guitar/e2.png">
                 </div>
                 <p>SX Vintage ST 57 Vintage White</p>
             </a>
@@ -300,6 +326,29 @@
             } else {
                 parametersContainer.style.display = "none";
                 button.textContent = "Show More Parameters";
+            }
+        }
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdownContent");
+            dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdownContent = document.getElementById("dropdownContent");
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                }
+            }
+        }
+
+
+        function toggleSearchBar() {
+            var searchBar = document.getElementById("search-bar");
+            if (searchBar.style.display === "block") {
+                searchBar.style.display = "none";
+            } else {
+                searchBar.style.display = "block";
             }
         }
     </script>

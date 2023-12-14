@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/64fe8cf115.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:ital,wght@1,300;1,400;1,600;1,700&family=Playpen+Sans:wght@300;400;700&family=Public+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/queries.css">
+    <link rel="stylesheet" href="CSS/purchase.css">
+    <link rel="stylesheet" href="CSS/home.css">
+
+</head>
+
+<body>
+    <!--header-->
+    <header id="home">
+        <div class="logo"><a href="index.html">Guitar Shop</a>
+
+        </div>
+        <!-- Hamburger menu icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="searchBar">
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Category</a></li>
+                <li><a href="#footer">Contact</a></li>
+
+
+                <li>
+                    <div class="dropdown">
+                        <img src="img/icons8-login-30.png" alt="Вход" onclick="toggleDropdown()" class="dropbtn">
+                        <div id="dropdownContent" class="dropdown-content">
+                            <form id="loginForm">
+                                <label for="username">Username:</label>
+                                <input type="text" id="username" name="username"  >
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password"  >
+                                <button type="submit">Log in</button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="cart.html"><img src="img/icons8-cart-30.png" alt="Cart"></a>
+                </li>
+                <li>
+                    <div class="search-icon" onclick="toggleSearchBar()">
+                        <img src="img/icons8-search-30.png" alt="Search Icon">
+                    </div>
+                    <div id="search-bar" class="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <a href="info_product.html"><button type="button">Search</button></a>
+                    </div>
+
+                </li>
+
+
+        </nav>
+    </header>
+    <main>
+        <div class="confirmation-container">
+            <h2>Order Confirmation</h2>
+            
+            <div class="order-details">
+                <h3>Thank you for your purchase!</h3>
+                <p>Your order number is: <strong>#123456</strong></p>
+                <p>We've sent a confirmation email to: <strong>email@example.com</strong></p>
+                <p>Your order will be shipped to:</p>
+                <address>
+                    Peter Parker<br>
+                    20 Ingram Street<br>
+                    Suite 1001<br>
+                    Queens, New York, 10000
+                    USA
+                </address>
+            </div>
+    
+            <div class="summary">
+                <h3>Order Summary</h3>
+                <p>Items total: $122.97</p>
+                <p>Shipping: $10.00</p>
+                <p>Tax: $8.90</p>
+                <p><strong>Total: $141.87</strong></p>
+            </div>
+    
+            <button type="button">Print Receipt</button>
+        </div>
+    </main>
+    </body>
+</html>

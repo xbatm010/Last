@@ -22,8 +22,8 @@
 
 <body>
     <header id="home">
-        <div class="logo"><a href="#home"></a>
-            Guitar Shop
+        <div class="logo"><a href="index.html">Guitar Shop</a>
+
         </div>
         <!-- Hamburger menu icon -->
         <div class="hamburger" onclick="toggleMenu()">
@@ -31,19 +31,45 @@
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
-        <!-- header content -->
-        <div class="search-container">
-            <input type="text" class="search-box" placeholder="Search...">
-            <button class="search-button">Search</button>
+        <div class="searchBar">
+
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Guitar</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="cart.html">Cart</a></li>
-            </ul>
+                <li><a href="product.html">Category</a></li>
+                <li><a href="#footer">Contact</a></li>
+
+
+                <li>
+                    <div class="dropdown">
+                        <img src="img/icons8-login-30.png" alt="Вход" onclick="toggleDropdown()" class="dropbtn">
+                        <div id="dropdownContent" class="dropdown-content">
+                            <form id="loginForm">
+                                <label for="username">Username:</label>
+                                <input type="text" id="username" name="username"  >
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password"  >
+                                <button type="submit">Log in</button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="cart.html"><img src="img/icons8-cart-30.png" alt="Cart"></a>
+                </li>
+                <li>
+                    <div class="search-icon" onclick="toggleSearchBar()">
+                        <img src="img/icons8-search-30.png" alt="Search Icon">
+                    </div>
+                    <div id="search-bar" class="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <a href="info_product.html"><button type="button">Search</button></a>
+                    </div>
+
+                </li>
+
+
         </nav>
     </header>
 
@@ -53,6 +79,29 @@
             const navMenu = document.querySelector('nav ul');
             navMenu.classList.toggle('active');
 
+        }
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdownContent");
+            dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdownContent = document.getElementById("dropdownContent");
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                }
+            }
+        }
+
+
+        function toggleSearchBar() {
+            var searchBar = document.getElementById("search-bar");
+            if (searchBar.style.display === "block") {
+                searchBar.style.display = "none";
+            } else {
+                searchBar.style.display = "block";
+            }
         }
     </script>
 
@@ -134,7 +183,7 @@
                 <div class="item">
                     <a class="item_info" href="/info_product.html">
                         <div>
-                            <img src="img/product_page/ukulele/u3.png" >
+                            <img src="img/product_page/ukulele/u1.png" >
                             <div class="item-description">
                                 <p class="item_name">TANGLEWOOD TWT 5</p>
                                 <p class="product_type">Ukulele</p>
@@ -155,7 +204,7 @@
                 <div class="item">
                     <a class="item_info" href="/info_product.html">
                         <div>
-                            <img src="img/product_page/ukulele/u4.png" >
+                            <img src="img/product_page/ukulele/u2.png" >
                             <div class="item-description">
                                 <p class="item_name">ORTEGA RUNAB-SO</p>
                                 <p class="product_type">Ukulele</p>
@@ -176,7 +225,7 @@
                 <div class="item">
                     <a class="item_info" href="/info_product.html">
                         <div>
-                            <img src="img/product_page/ukulele/u5.png" >
+                            <img src="img/product_page/ukulele/u1.png" >
                             <div class="item-description">
                                 <p class="item_name">BAMBOO U-21 Eco II</p>
                             <p class="product_type">Ukulele</p>
@@ -197,7 +246,7 @@
                 <div class="item">
                     <a class="item_info" href="/info_product.html">
                         <div>
-                            <img src="img/product_page/ukulele/u6.png" >
+                            <img src="img/product_page/ukulele/u2.png" >
                             <div class="item-description">
                                 <p class="item_name">UCOOLELE UC-004-WD</p>
                                 <p class="product_type">Ukulele</p>
@@ -218,7 +267,7 @@
                 <div class="item">
                     <a class="item_info" href="/info_product.html">
                         <div>
-                            <img src="img/product_page/ukulele/u7.png" >
+                            <img src="img/product_page/ukulele/u1.png" >
                             <div class="item-description">
                                 <p class="item_name">BLOND US-210 WH</p>
                                 <p class="product_type">Ukulele</p>

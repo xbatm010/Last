@@ -14,7 +14,7 @@ html{
 header {
     background-color: #333;
     color: #fff;
-    padding: 35px;
+    padding: 20px;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -22,7 +22,7 @@ header {
     position: relative;
   }
  .introduction h1{
-  font-size: 100%;
+  font-size: 65px;
   margin-bottom: 30px;
  }
  .introduction p{
@@ -336,9 +336,71 @@ header {
     color: #333; /* Change icon color if required */
   }
 
+/*cart page*/
 
+  .cart-page{
+    margin: 80px auto;
+padding-left: 30px;
+padding-right: 30px;
+  }
+  table{
 
-  
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .cart-info{
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  th{
+
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #5a5a5a;
+    border: #333;
+    border-radius: 5px;
+    font-weight: normal;
+  }
+
+  td{
+    padding: 10px 5px;
+
+  }
+
+  td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+  }
+
+  td a{
+    color: #ff523b;
+    font-size: 12px;
+  }
+  td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+  .total-price{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .total-price table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+  }
+  td:last-child{
+    text-align: right;
+
+  }
+  th :last-child{
+    text-align: right;
+  }
 
 main{
   padding: 4%; 
@@ -364,8 +426,39 @@ aside {
 }
 
 
+
+
+/*Form for cart page*/
+form {
+  max-width: 500px;
+ margin: 0 auto;
+  padding: 20px;
+  
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea,
+button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
+
 .dropdown {
-  position: absolute;
+  position: relative;
   display: inline-block;
 }
 
@@ -377,8 +470,6 @@ aside {
 }
 
 .dropdown-content {
-  top: 3rem;
-  left: -8rem;
   display: none;
   position: absolute;
   background-color: #333;
@@ -392,170 +483,8 @@ aside {
 }
 
 .dropdown-content label,
-.dropdown-content input{
-  padding: 8px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-}
+.dropdown-content input,
 .dropdown-content button {
   display: block;
   margin-bottom: 10px;
-}
-
-
-
-
-.search-icon {
-  cursor: pointer;
-}
-
-.search-bar {
-  display: none;
-  position: absolute;
-  top: 104px;
-  right: 0;
-  background-color: #333;
-
-  padding: 15px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.search-bar input {
-  width: 250px;
-  padding: 8px;
-  border: none;
-  border-right: 1px solid #ccc;
-}
-
-.search-bar button {
-  padding: 8px 10px;
-  width: 60px;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-
-.product {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  position: relative;
-  margin-right: 20%;
-  border-bottom-style: solid;
-  border-radius: 20px;
-  border-top-style: inset;
-}
-
-.product img {
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-.product-info {
-  margin: 30px;
-  flex: 1;
-}
-
-.product-counter {
-  display: flex;
-  align-items: center;
-  margin-left: auto; /* Pushes the counter to the right side */
-  padding-right: 20px; /* Spacing from the right edge */
-}
-
-.product-counter span {
-  margin: 0 5px; /* Spacing between the symbols and number */
-  user-select: none; /* Prevents text selection for better UX */
-}
-
-.counter-number {
-  font-weight: bold;
-}
-
-.product h2 {
-  font-size: 18px;
-}
-
-
-
-
-.checkout {
-  text-align: right;
-  margin-top: 20px;
-}
-
-.checkout p {
-margin-left: 30%;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-button {
-  width: 300px;
-  color: #fff;
-  padding: 15px 20px;
-  border: noту;
-  cursor: pointer;
-  position: relative;
-}
-
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f4f4f4;
-}
-
-button{
-  color: #000000;
-  background-color: rgb(49, 184, 8);
-  width: 150px; 
-  height: 30px;
-  border: none;
-  border-radius: 10px;
-  padding: 5px 8px;
-  margin: 15px;
-
-
-}
-.remove-btn{
-background-color:red
-}
-
-.instructions-container {
-  display: flex; /* Enables flexbox layout */
-  align-items: center; /* Vertically aligns items in the middle */
-  justify-content: space-between; /* Spaces out children elements */
-  gap: 10px; /* Optional: adds space between the textarea and the button */
-}
-
-.instructions-container textarea {
-  flex-grow: 1; /* Allows textarea to grow and fill the space */
-  margin-right: 10px; /* Adds margin to the right of textarea */
-}
-
-.instructions-container button {
-  white-space: nowrap; /* Ensures the button text doesn't wrap */
-  padding: 10px 20px; /* Adds padding inside the button */
-  background-color: #28a745; /* Green background */
-  border: none; /* Removes the border */
-  color: rgb(15, 15, 15); /* Text color */
-  cursor: pointer; /* Changes cursor to indicate button */
-  border-radius: 4px; /* Rounds the corners of the button */
-  width: 300px;
-  height: 50px;
-}
-
-/* Add media queries for responsive design if needed */
-@media (max-width: 768px) {
-  .delivery-form {
-    max-width: 100%;
-  }
-}
-h3{
-  margin: 10px;
 }

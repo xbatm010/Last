@@ -162,6 +162,9 @@ main {
 .block1{
     background-color: #979797;
     padding: 30px 20px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .block1 h1{ 
@@ -234,6 +237,9 @@ main {
 .block3{
     background-color: #979797;
     padding: 30px 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
 }
 
 .block3 h1{
