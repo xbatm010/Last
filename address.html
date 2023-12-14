@@ -44,9 +44,9 @@
                         <div id="dropdownContent" class="dropdown-content">
                             <form id="loginForm">
                                 <label for="username">Username:</label>
-                                <input type="text" id="username" name="username">
+                                <input type="text" id="username" name="username"  >
                                 <label for="password">Password:</label>
-                                <input type="password" id="password" name="password">
+                                <input type="password" id="password" name="password"  >
                                 <button type="submit">Log in</button>
                             </form>
                         </div>
@@ -70,41 +70,58 @@
         </nav>
     </header>
     <main>
-        <h1>Payment Information</h1>
-        <form class="payment-form" action="process_payment.php" method="POST">
-            <div class="card-icons">
-                <img src="visa.png" alt="Visa">
-                <img src="mastercard.png" alt="Mastercard">
-                <img src="amex.png" alt="Amex">
+        <h1>Delivery Address</h1>
+        <form class="delivery-form" action="process_delivery.php" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"  >
             </div>
             <div class="form-group">
-                <label for="card-number">Credit Card Number:</label>
-                <input type="text" id="card-number" name="card-number" required>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address"  >
             </div>
             <div class="form-group">
-                <label for="card-holder">Cardholder Name:</label>
-                <input type="text" id="card-holder" name="card-holder" required>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city"  >
             </div>
             <div class="form-group">
-                <label for="expiry-date">Expiry Date:</label>
-                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                <label for="zip">ZIP Code:</label>
+                <input type="text" id="zip" name="zip"  >
             </div>
             <div class="form-group">
-                <label for="cvv">CVV:</label>
-                <input type="text" id="cvv" name="cvv" required>
+                <label for="country">Country:</label>
+                <select id="country" name="country"  >
+                    <option value="usa">United States</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <!-- Add more country options as needed -->
+                </select>
             </div>
             <div class="form-group">
-                <label for="billing-address">Billing Address:</label>
-                <input type="text" id="billing-address" name="billing-address" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"  >
             </div>
             <div class="form-group">
-                <label for="zipcode">ZIP Code:</label>
-                <input type="text" id="zipcode" name="zipcode" required>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"  >
             </div>
             <div class="form-group">
-                <input type="submit" value="Submit Payment">
+                <label for="notes">Additional Notes:</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
             </div>
+            <div class="form-group">
+                <label for="delivery-method">Select Delivery Method:</label>
+                <select id="delivery-method" name="delivery-method">
+                    <option value="standard">Standard Delivery</option>
+                    <option value="express">Express Delivery</option>
+                    <option value="overnight">DHL Delivery</option>
+                    <option value="overnight">FedEx Delivery</option>
+                    <option value="overnight">UPC Delivery</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <a href="payment.html"><input type="submit" value="Submit">
+                </div></a>
         </form>
     </main>
-
 </body>

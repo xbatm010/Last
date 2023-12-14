@@ -44,9 +44,9 @@
                         <div id="dropdownContent" class="dropdown-content">
                             <form id="loginForm">
                                 <label for="username">Username:</label>
-                                <input type="text" id="username" name="username">
+                                <input type="text" id="username" name="username"  >
                                 <label for="password">Password:</label>
-                                <input type="password" id="password" name="password">
+                                <input type="password" id="password" name="password"  >
                                 <button type="submit">Log in</button>
                             </form>
                         </div>
@@ -69,42 +69,3 @@
 
         </nav>
     </header>
-    <main>
-        <h1>Payment Information</h1>
-        <form class="payment-form" action="process_payment.php" method="POST">
-            <div class="card-icons">
-                <img src="visa.png" alt="Visa">
-                <img src="mastercard.png" alt="Mastercard">
-                <img src="amex.png" alt="Amex">
-            </div>
-            <div class="form-group">
-                <label for="card-number">Credit Card Number:</label>
-                <input type="text" id="card-number" name="card-number" required>
-            </div>
-            <div class="form-group">
-                <label for="card-holder">Cardholder Name:</label>
-                <input type="text" id="card-holder" name="card-holder" required>
-            </div>
-            <div class="form-group">
-                <label for="expiry-date">Expiry Date:</label>
-                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
-            </div>
-            <div class="form-group">
-                <label for="cvv">CVV:</label>
-                <input type="text" id="cvv" name="cvv" required>
-            </div>
-            <div class="form-group">
-                <label for="billing-address">Billing Address:</label>
-                <input type="text" id="billing-address" name="billing-address" required>
-            </div>
-            <div class="form-group">
-                <label for="zipcode">ZIP Code:</label>
-                <input type="text" id="zipcode" name="zipcode" required>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Submit Payment">
-            </div>
-        </form>
-    </main>
-
-</body>

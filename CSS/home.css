@@ -22,7 +22,7 @@ header {
     position: relative;
   }
  .introduction h1{
-  font-size: 65px;
+  font-size: 100%;
   margin-bottom: 30px;
  }
  .introduction p{
@@ -426,39 +426,8 @@ aside {
 }
 
 
-
-
-/*Form for cart page*/
-form {
-  max-width: 500px;
- margin: 0 auto;
-  padding: 20px;
-  
-}
-input[type="text"],
-input[type="email"],
-select,
-textarea,
-button {
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-button {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #45a049;
-}
-
 .dropdown {
-  position: relative;
+  position: absolute;
   display: inline-block;
 }
 
@@ -470,8 +439,8 @@ button:hover {
 }
 
 .dropdown-content {
-  top: 69px;
-  left: 8px;
+  top: 3rem;
+  left: -8rem;
   display: none;
   position: absolute;
   background-color: #333;
@@ -535,6 +504,8 @@ button:hover {
   margin-bottom: 20px;
   position: relative;
   margin-left: 30%;
+  border-style: solid;
+  border-radius: 20px;
 }
 
 .product img {
@@ -547,9 +518,28 @@ button:hover {
   flex: 1;
 }
 
+.product-counter {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Pushes the counter to the right side */
+  padding-right: 20px; /* Spacing from the right edge */
+}
+
+.product-counter span {
+  margin: 0 5px; /* Spacing between the symbols and number */
+  user-select: none; /* Prevents text selection for better UX */
+}
+
+.counter-number {
+  font-weight: bold;
+}
+
 .product h2 {
   font-size: 18px;
 }
+
+
+
 
 .checkout {
   text-align: right;
@@ -571,11 +561,21 @@ button {
   position: relative;
 }
 
+<<<<<<< Updated upstream
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background: #f4f4f4;
+=======
+
+/* Cart page breadcrumb*/
+
+nav.breadcrumbs {
+  padding: 0px;
+  position: absolute;
+  top: 130px;
+>>>>>>> Stashed changes
 }
 
 .cart-container {
@@ -603,6 +603,7 @@ h1 {
   margin-bottom: 10px;
 }
 
+<<<<<<< Updated upstream
 .cart-item img {
   width: 100px; /* Adjust as necessary */
   margin-right: 20px;
@@ -654,4 +655,148 @@ h1 {
 textarea {
   width: 100%;
   margin-top: 10px;
+=======
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}/*_____Address page_____*/
+
+.delivery-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style form labels */
+.delivery-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Style form input fields and select */
+.delivery-form input[type="text"],
+.delivery-form input[type="email"],
+.delivery-form input[type="tel"],
+.delivery-form input[type="submit"],
+.delivery-form select,
+.delivery-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+/* Style the submit button */
+.delivery-form input[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Change button color on hover */
+.delivery-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Add some spacing and styling to the form */
+.delivery-form .form-group {
+  margin-bottom: 20px;
+}
+
+/* Add media queries for responsive design if needed */
+@media (max-width: 768px) {
+  .delivery-form {
+    max-width: 100%;
+  }
+}
+
+
+
+/*         Payment Page                   */
+
+
+.payment-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style form labels */
+.payment-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Style form input fields and select */
+.payment-form input[type="text"],
+.payment-form input[type="text"],
+.payment-form input[type="email"],
+.payment-form input[type="tel"],
+.payment-form input[type="submit"],
+.payment-form select,
+.payment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+/* Style the submit button */
+.payment-form input[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Change button color on hover */
+.payment-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Add some spacing and styling to the form */
+.payment-form .form-group {
+  margin-bottom: 20px;
+}
+
+/* Style card icons */
+.card-icons img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Add media queries for responsive design if needed */
+@media (max-width: 768px) {
+  .payment-form {
+    max-width: 100%;
+  }
+>>>>>>> Stashed changes
 }

@@ -182,7 +182,6 @@
             dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
         }
 
-        // Закрытие выпадающего меню, если пользователь щелкает вне него
         window.onclick = function (event) {
             if (!event.target.matches('.dropbtn')) {
                 var dropdownContent = document.getElementById("dropdownContent");
