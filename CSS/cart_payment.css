@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+/*Breadcrumb*/
+
+
+.breadcrumb {
+    height: 45px;
+    display: block;
+    padding: 5px 10px;
+}
+
+.icon {
+    height: 20px;
+}
+
+.breadcrumb a {
+    color: black;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.cart-header {
+    grid-column: 1 / -1;
+    /* Full width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cart-body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+}
+
+.products {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.product img {
+    width: 100px;
+    /* Adjust as necessary */
+}
+
+.product-info {
+    display: grid;
+    grid-gap: 5px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.remove-btn,
+.update-btn {
+    background: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+}
+
+.update-btn {
+    background: #788d78;
+}
+
+.checkout-btn {
+    background: #f0ad4e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+}
+
+.checkout {
+    display: grid;
+    grid-gap: 10px;
+
+}
+/* ----------------payment------------------------------- */
+
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    margin-right: 20%;
+    border-bottom-style: solid;
+    border-radius: 20px;
+    border-top-style: inset;
+  }
+  
+  .product img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  .product-info {
+    margin: 30px;
+    flex: 1;
+  }
+  
+  .product-counter {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Pushes the counter to the right side */
+    padding-right: 20px; /* Spacing from the right edge */
+  }
+  
+  .product-counter span {
+    margin: 0 5px; /* Spacing between the symbols and number */
+    user-select: none; /* Prevents text selection for better UX */
+  }
+  
+  .counter-number {
+    font-weight: bold;
+  }
+  
+  .product h2 {
+    font-size: 18px;
+  }
+  
+  
+  
+  
+  .checkout {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .checkout p {
+  margin-left: 30%;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  button {
+    width: 300px;
+    color: #fff;
+    padding: 15px 20px;
+    border: noту;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+  }
+  
+  button{
+    color: #000000;
+    background-color: rgb(49, 184, 8);
+    width: 150px; 
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 8px;
+    margin: 15px;
+  
+  
+  }
+  .remove-btn{
+  background-color:red
+  }
+  
+  .instructions-container {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Vertically aligns items in the middle */
+    justify-content: space-between; /* Spaces out children elements */
+    gap: 10px; /* Optional: adds space between the textarea and the button */
+  }
+  
+  .instructions-container textarea {
+    flex-grow: 1; /* Allows textarea to grow and fill the space */
+    margin-right: 10px; /* Adds margin to the right of textarea */
+  }
+  
+  .instructions-container button {
+    white-space: nowrap; /* Ensures the button text doesn't wrap */
+    padding: 10px 20px; /* Adds padding inside the button */
+    background-color: #28a745; /* Green background */
+    border: none; /* Removes the border */
+    color: rgb(15, 15, 15); /* Text color */
+    cursor: pointer; /* Changes cursor to indicate button */
+    border-radius: 4px; /* Rounds the corners of the button */
+    width: 300px;
+    height: 50px;
+  }
+  

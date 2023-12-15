@@ -4,37 +4,52 @@
 /* Small phone 400 to small tablet 768 */
 
 @media screen and (max-width: 768px) {
-    .hamburger {
-      display: flex;
-    }
+  .hamburger {
+    display: flex;
+  }
 
-    nav ul {
-      display: none;
-      flex-direction: column;
-      text-align: center;
-      width: 100%;
-      position: absolute; 
-      top: 60px;
-      left: 0;
-      background-color: #333;
-      z-index: 1;
-    }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    z-index: 1;
+  }
 
-    nav ul.active {
-      display: flex;
-    }
+  nav ul.active {
+    display: flex;
+  }
 
-    nav ul li {
-      margin: 15px 0;
-    }
-    
-    .sidebar{
-      display: none;
+  nav ul li {
+    margin: 15px 0;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .main-container {
+    display: flex;
+  }
+
+  /* Add media queries for responsive design if needed */
+  @media (max-width: 768px) {
+    .delivery-form {
+      max-width: 100%;
     }
   }
 
+  h3 {
+    margin: 10px;
+  }
+}
 
-  
+
+
 
 
 
